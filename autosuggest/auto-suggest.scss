@@ -1,0 +1,58 @@
+$alternate-color: #F5F6F8;
+.react-select {
+  position: relative;
+  .form-search {
+    background-image: url('/assets/images/flaticon-search.png');
+    background-repeat: no-repeat;
+    background-position: center left 7px;
+    background-size: 20px;
+    padding-left: 35px;
+  }
+  ul {
+    z-index: 900;
+    position: absolute;
+    border: solid 1px $border-color;
+    border-top: none;
+    margin: 0;
+    width: 100%;
+    background: $white;
+    border-radius: 0 0 $border-radius $border-radius;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+    display: none;
+    &._show-options {
+      display: block;
+    }
+    li {
+      font-size: 13px;
+      list-style-type: none;
+      padding: 14px 8px;
+      height: inherit;
+      &._with-image {
+        div.img-holder {
+          margin-right: 10px;
+          margin-top: -2px;
+          float: left;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: $border-radius;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        background-color: $alternate-color;
+      }
+      &:hover {
+        cursor: pointer;
+        font-family: $font-medium;
+        background-color: $page-background;
+      }
+      .sublabel {
+        font-size: 11px;
+        color: $text-color-light;
+      }
+    }
+  }
+}

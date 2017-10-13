@@ -1,0 +1,98 @@
+$alterate-bg-color: #F5F6F8;
+
+.multi-select-wrapper {
+  margin-bottom: 25px;
+  .ms-container {
+    .ms-selectable, .ms-selection {
+      border-radius: $border-radius;
+      border: solid 1px $border-color-medium;
+      height: 400px;
+      .ms-header {
+        font-family: $font-medium;
+        font-size: 14px;
+        color: $text-color;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 10px;
+        border-bottom: solid 1px $border-color-medium;
+        border-radius: $border-radius $border-radius 0 0;
+      }
+      ul.ms-list {
+        list-style-type: none;
+        box-shadow: none;
+        border: none;
+        border-radius: $border-radius;
+        margin: 10px 0;
+        padding: 0 10px;
+        overflow-y: auto;
+        height: 340px;
+        li.empty {
+          text-align: center;
+          font-size: 13px;
+          color: $text-color-light;
+          margin: 10px auto;
+        }
+        li {
+          color: $text-color;
+          padding: 0 10px;
+          div.crumbs {
+            font-family: $font-light;
+            font-size: 11px;
+            color: $text-color-light;
+          }
+          span.col-md-9 {
+            padding: 0;
+          }
+          img.arrow {
+            float: right;
+            width: 18px;
+            margin-top: 14px;
+            cursor: pointer;
+          }
+        }
+        span.ms-optgroup-label {
+          background: $white;
+          height: $form-control-height;
+          line-height: $form-control-height;
+          padding: 0;
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
+        li.ms-elem-selectable, li.ms-elem-selected, li.ms-selected {
+          border: none;
+          min-height: $form-control-height;
+          background: $alterate-bg-color;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          padding: 10px;
+          &:nth-child(even) {
+            background: $white;
+          }
+          &>div {
+            padding: 0;
+          }
+        }
+        li.ms-hover {
+          color: $text-color;
+          font-family: $font-medium;
+        }
+        ul.ms-optgroup-container {
+          list-style-type: none;
+          padding-left: 10px;
+        }
+      }
+    }
+    .ms-selectable {
+      .search-bar {
+        #search-multi-list {
+          margin: 10px auto;
+          border: solid 1px $border-color-light;
+        }
+      }
+      ul.ms-list {
+        height: 290px;
+      }
+    }
+  }
+}

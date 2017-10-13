@@ -1,0 +1,20 @@
+.mce-container, .mce-container-body {
+  font-family: $font !important;
+  color: $text-color !important;
+}
+
+.text-editor-div {
+  position: relative;
+  padding: 10px;
+  outline: none !important;
+  min-height: 200px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  margin-bottom: 20px;
+
+  &:focus {
+    padding-top: 60px;
+  }
+
+  @extend .normalize-div;
+}

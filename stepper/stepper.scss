@@ -1,0 +1,40 @@
+.stepper {
+  margin: -5px -10px 0;
+  .step-group {
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    .btn-step-up {
+      background: url('/assets/images/stepper-add.svg');
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      width: 45px;
+      height: 45px;
+      border: none;
+      box-shadow: none;
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+    .stepper-value {
+      display: table-cell;
+      vertical-align: middle;
+      height: 40px;
+      width: inherit;
+    }
+    .btn-step-down {
+      background: url('/assets/images/stepper-subtract.svg');
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
+      width: 45px;
+      height: 45px;
+      border: none;
+      box-shadow: none;
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
